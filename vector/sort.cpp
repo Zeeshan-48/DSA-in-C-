@@ -1,0 +1,31 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+int main(){
+    vector<int> v;
+    v.push_back(50);
+    v.push_back(54);
+    v.push_back(76);
+    v.push_back(65);
+    v.push_back(76);
+    v.push_back(58);
+    v.push_back(73);
+    v.push_back(63);
+    v.push_back(51);
+    v.push_back(66);
+    v.push_back(87);
+    v.push_back(53);
+    for(int i=0;i<v.size();i++){
+        cout<<v[i]<<" ";
+    }
+    cout<<endl;
+
+    sort(v.begin(),v.end());
+
+    for(int i=0;i<v.size();i++){
+        cout<<v[i]<<" ";
+    }
+    return 0;
+
+}
