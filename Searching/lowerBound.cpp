@@ -18,7 +18,7 @@ int main(){
         else hi = mid-1;
     }
     if(flag == false){
-        cout<<arr[hi];
+        cout<<arr[hi];// hi denote lower bond
     }
     
 }
