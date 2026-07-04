@@ -6,7 +6,7 @@ void merge(vector<int>& a, vector<int>& b, vector<int>& v){
     int j=0;
     int k=0;
     while(i<a.size() && j<b.size()){
-        if(a[i]<b[j]){
+        if(a[i]<=b[j]){
             v[k] = a[i];
             k++;
             i++;
@@ -51,6 +51,9 @@ void mergeSort(vector<int>& v){
     mergeSort(b);
 
     merge(a,b,v);
+
+    a.clear();
+    b.clear();
 
 }
 int main(){
